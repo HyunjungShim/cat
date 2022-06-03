@@ -1,0 +1,103 @@
+html,body {
+    width: 100%;
+    box-sizing:border-box;
+    height:100%
+}
+
+.header {
+    color: #6F7072;
+    font-weight: bold;
+    border-bottom: 1px solid #C9AFE4;
+    width: 100%;
+    min-width: 400px;
+}
+
+.header>div {
+    margin:20px 0px 10px;
+}
+
+.wrap {
+    width: 100%;
+}
+
+.box {
+    float: left;
+    width: 33.333%;
+}
+
+.invisible {
+    height: 1px;
+}
+
+.title {
+    float: left;
+    width: 33.333%;
+    font-size:23px;
+    text-align: center;
+}
+
+.clear {
+    clear: both
+}
+
+.list { width: 100%;}
+.list-item { border-top:1px solid #C9AFE4; border-bottom:1px solid #C9AFE4; color:#6F7072; font-size:18px; font-weight:bold; padding:10px 0px;}
+.list-group { width:25%; float:left; margin:auto; display:block; text-align:center;}
+.list-group {font-weight:bold;}
+
+/* 버튼 */
+.search-input { margin-bottom: 10px; font-size:12px; display:flex;}
+.w_90 { width: 95%;border-bottom:1px solid #C9AFE4;}
+.w_10 { width: 10%;}
+.w_10 img { width:80%;}
+.search-input input { width:95%; border:none; }
+.button-group button { background-color:#4C2574; width:100%; height:50px;border-radius:5px; color:white; border:none; display:block;
+    margin-right:10px; margin-top: 20px; font-weight:bold;
+}
+/* 이미지 */
+.coupon img { width:40%}
+.coupon { width: 30%; }
+.content { width: 70%; }
+/* 쿠폰 조회시작,종료*/
+.flex { display:flex; justify-content: center;align-items:center;}
+.search-content p { font-size:12px; margin-top:15px; padding-right: 5px; color:#4C2574; font-weight:bold;}
+.search-content input { font-size:12px; color:#4C2574}
+/* .calender { float:right; width: 20%;} */
+.container { margin-top: 100px; margin-bottom:20px;}
+
+@media screen and (min-width:500px){
+    .search-content p { font-size:16px;}
+    .search-content input { font-size:16px;}
+    .calender { display:none;}
+    .coupon img { width:60%;}
+    .w_10 img { width:50%;}
+}
+
+
+@media screen and (max-width:767px){
+    .list-item { font-size:12px;}
+    .list-group { font-size:11px}
+    .search-date p { font-size:13px;}
+    .search-date input { width:100px; height:23px;}
+    .search-bar img { width: 20px;}
+    .search-bar ::placeholder { font-size:11px;}
+    .search-date input { font-size:11px; width:80px;}
+    .search-date p { font-size:10px;}
+    .flex-box { width:90%; margin-top:0px;}
+    .calender { display:none;}
+    .coupon img { width:70%;}
+    .w_10 img { width:50%;}
+}
+
+@media screen and (min-width:1076px){
+    .search-content input { width: 200px;}
+    .search-coupon { display:flex; justify-content:center; align-items:center;}
+    .calender { display:block;}
+    .calender img { margin-left: 20px; width:70%}
+    .button-group button { font-size:17px;}
+    .coupon img { width:40%;}
+    .w_10 img { width:50%;}
+    .search-input input { font-size:18px;}
+}
+
+

@@ -1,0 +1,123 @@
+html,
+body {
+    width: 100%;
+}
+
+.header {
+    color: #6F7072;
+    font-weight: bold;
+    border-bottom: 1px solid #C9AFE4;
+    width: 100%;
+    min-width: 400px;
+}
+
+.header>div {
+    margin: 20px 0px;
+}
+
+.wrap {
+    width: 100%;
+}
+
+.box {
+    float: left;
+    width: 33.333%;
+}
+
+.invisible {
+    height: 1px;
+}
+
+.title {
+    float: left;
+    width: 33.333%;
+    font-size: 28px;
+    text-align: center;
+}
+
+.title p {
+    margin: 0;
+}
+
+.clear {
+    clear: both
+}
+
+.content {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content img {
+    display: block;
+    margin: auto;
+}
+
+.sign-container { min-width:400px;}
+.sign {
+    background-color: #C4C4C4;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    border-radius: 5px;
+
+}
+
+.btn-content {
+    width: 400px;
+}
+
+.btn-content button {
+    width: 160px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.can {
+    color: #4C2574;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid #C9AFE4;
+}
+
+.del {
+    margin-left: 10px;
+    margin-top: 50px;
+    background-color: #4C2574;
+    color: white;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.coupon {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0;
+    min-width:400px;
+}
+
+.coupon p {
+    color: #6F7072;
+    margin-left: 30px;
+}
+
+.p-button {
+    color: #4C2574;
+    border: 1px solid #4C2574;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: underline;
+    width: 160px;
+    height: 60px;
+    font-weight: bold;
+}
+
+.price {
+    margin-right: 70px;
+}
+
+.coupon-img { min-width:400px; width: 100%;}

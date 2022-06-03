@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="매장관리.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="box">
+                <img src="./img/leftarrow.png" alt="">
+            </div>
+            <div class="title">
+                <p>매장관리</p>
+            </div>
+            <div class="box invisible">
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="add-container">
+        <div class="content">
+            <div class="add-title">
+                <p>매장사진</p>
+            </div>
+            <div class="add-info">
+                <div class="add-menu-content add-menu-img ">
+                    <img src="./img/plus.png" alt="">
+                    <p>매장 이미지 추가</p>
+                </div>
+                <p class="color-gray">· 10MB 이하, JPG, PNG, PDF 형식의 파일만 등록할 수 있어요.</p>
+                <p class="color-gray">· 최소 세장 이상의 이미지를 등록해 주세요.</p>
+                <p class="color-gray">· 가장 처음 선택한 이미지가 매장의 대표 이미지가 됩니다.</p>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="content">
+            <div class="add-title">
+                <p>매장형태</p>
+            </div>
+            <div class="add-info">
+                <div class="select" data-role="selectBox">
+                    <span date-value="optValue" class="selected-option">
+                        <!-- 선택된 옵션 값이 출력되는 부분 --></span>
+
+                    <!-- 옵션 영역 -->
+                    <ul class="hide">
+                        <li>
+                            <i><img src="./img/체크박스.png" alt="" /></i>손세차
+                        </li>
+                        <li>
+                            <i><img src="./img/체크박스.png" alt="" /></i>출장세차
+                        </li>
+                        <li>
+                            <i><img src="./img/체크박스.png" alt="" /></i>셀프세차
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="content">
+            <div class="add-title">
+                <p>매장 운영시간</p>
+            </div>
+            <div class="add-info on">
+                <input type="text" placeholder="0,000">
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="content mt-class">
+            <div class="add-title">
+                <p>매장 휴무일</p>
+            </div>
+            <div class="add-info">
+                <input type="text" placeholder="직접 입력해주세요.">
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="content">
+            <div class="add-title">
+                <p>메뉴관리</p>
+            </div>
+            <div class="add-info">
+                <input type="text" placeholder="0,000">
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="content">
+            <div class="add-title">
+                <p>리뷰관리</p>
+            </div>
+            <div class="add-info">
+                <input type="text" placeholder="0,000">
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="submit-btn">
+            <button class="confirm-btn">추가하기</button>
+        </div>
+    </div>
+
+    <script>
+        const body = document.querySelector('body');
+        const select = document.querySelector(`[data-role="selectBox"]`);
+        const values = select.querySelector(`[date-value="optValue"]`);
+        const option = select.querySelector('ul');
+        const opts = option.querySelectorAll('li');
+
+        /* 셀렉트영역 클릭 시 옵션 숨기기, 보이기 */
+        function selects(e) {
+            e.stopPropagation();
+            option.setAttribute('style', `top:${select.offsetHeight}px`)
+            if (option.classList.contains('hide')) {
+                option.classList.remove('hide');
+                option.classList.add('show');
+            } else {
+                option.classList.add('hide');
+                option.classList.remove('show');
+            }
+            selectOpt();
+        }
+
+        /* 옵션선택 */
+        function selectOpt() {
+            opts.forEach(opt => {
+                const innerValue = opt.innerHTML;
+
+                function changeValue() {
+                    values.innerHTML = innerValue;
+                }
+                opt.addEventListener('click', changeValue)
+            });
+        }
+
+        /* 렌더링 시 옵션의 첫번째 항목 기본 선택 */
+        function selectFirst() {
+            const firstValue = opts[0].innerHTML;
+            values.innerHTML = ' 손세차'
+        }
+
+        /* 옵션밖의 영역(=바디) 클릭 시 옵션 숨김 */
+        function hideSelect() {
+            if (option.classList.contains('show')) {
+                option.classList.add('hide');
+                option.classList.remove('show');
+            }
+        }
+
+        selectFirst();
+        select.addEventListener('click', selects);
+        // body.addEventListener('click', hideSelect);
+
+        $('.select').on('click', function(){
+            $('.on').toggle()
+            $('')
+        });
+        
+        document.getElementsByClassName('select')[0].addEventListener('click', function(){
+            document.getElementsByClassName('mt-class')[0].classList.toggle('mt')
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+.container {  display:flex; flex-direction:column; margin-top:90px; padding: 0 !important;}
+.content { text-align:center;}
+.content img { width:150px; display:block; margin:auto;}
+.content p { color:#4C2574;font-size:27px; margin-top: 10px; }
+.btn button { background-color:#4C2574; color:white; margin-top:40px; border-radius:5px; width:280px; height:50px;}
+
+@media screen and(min-width:767px) {
+    .container {  display:flex; flex-direction:column;  margin-top:150px;}
+    .content { text-align:center;}
+    .content img { width:200px; display:block; margin:auto;}
+    .content p { color:#4C2574;font-size:36px; margin-top: 10px; }
+    .btn button { background-color:#4C2574; color:white; margin-top:40px; border-radius:5px; width:390px; height:50px;}
+    
+}

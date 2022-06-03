@@ -1,0 +1,46 @@
+body,html { width: 100%;}
+.header {
+    color: #6F7072;
+    font-weight: bold;
+    border-bottom: 1px solid #C9AFE4;
+    width: 100%;
+    min-width: 400px;
+}
+
+.header>div {
+    margin:20px 0px 10px;
+}
+
+.wrap {
+    width: 100%;
+}
+
+.box {
+    float: left;
+    width: 33.333%;
+}
+
+.invisible {
+    height: 1px;
+}
+
+.title {
+    float: left;
+    width: 33.333%;
+    font-size:23px;
+    text-align: center;
+}
+
+.clear {
+    clear: both
+}
+
+.profile {width:100%;min-width:400px; font-weight:bold; font-size:23px; display:flex; flex-direction:column; align-items:center; margin:100px auto;}
+.profile img { margin-bottom: 10px; display:block; }
+
+.name { font-weight:bold; font-size:18px; }
+.name p { padding-bottom:10px;}
+.detail { display:flex; flex-direction:column;}
+.detail input { margin-bottom:15px; height:35px; border:1px solid #C9AFE4;}
+.detail ::placeholder { color:#4C2574; font-weight:bold;}
+.info-width { max-width:700px !important;}

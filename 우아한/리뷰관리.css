@@ -1,0 +1,141 @@
+html,
+body {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%
+}
+
+.header {
+    color: #6F7072;
+    font-weight: bold;
+    border-bottom: 1px solid #C9AFE4;
+    width: 100%;
+    min-width: 400px;
+}
+
+.header>div {
+    margin: 20px 0px 10px;
+}
+
+.wrap {
+    width: 100%;
+}
+
+.box {
+    float: left;
+    width: 33.333%;
+}
+
+.invisible {
+    height: 1px;
+}
+
+.title {
+    float: left;
+    width: 33.333%;
+    font-size: 23px;
+    text-align: center;
+}
+
+.clear {
+    clear: both
+}
+
+.review-content {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.review-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.review-wrap {
+    width: 90%;
+    margin: 50px auto;
+}
+
+/* .profile-img {
+    float: left;
+    width:5%;
+}
+
+.review-coment {
+    float: right;
+    width: 70%;
+}
+
+
+
+.user-name {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.hambuger-menu {
+    border: 1px solid #C9AFE4;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.border-purple {
+    border-bottom: 1px solid #C9AFE4;
+}
+
+.mt {
+    margin-top: 5px;
+} */
+
+.review-size {
+    width: 100%;
+    margin-bottom:20px;
+    display:flex;
+}
+
+.hambuger-menu{  border: 1px solid #C9AFE4;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    margin-left:50px;
+    font-size:14px;
+    width:100%;
+    margin-top:10px;
+}
+.border-purple { border-bottom:1px solid #C9AFE4;}
+.review-size img { max-width:60px; max-height:60px;}
+.modal-content { display:none; margin-left: 50px;}
+.flex { display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+.reply { width:40%; display:none;}
+.reply input { display:block; margin:auto; width:80%; height:100px;}
+.btn-content { width:100%;}
+.btn-style { padding: 10px;}
+.btn-style p { font-size:13px;}
+.modal-content { width: 100%;}
+.btn-content button { font-size:13px;}
+.reply-content { margin-top: 10px; display:flex; align-items: center; justify-content:center;}
+.reply-content button { padding:10px 30px; border-radius:5px; font-weight:bold;}
+.modal-content { padding:5px;}
+/* .profile-img { width: 5%; float:left;}
+.review-comment { width:70%; float:left; margin-left:30px;}
+.hambuger-menu{ width: 20%; float:right; border: 1px solid #C9AFE4;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;} */
+
+@media screen and (max-width:1024px) {
+    .detail-review { font-size:14px;}
+} 
+
+@media screen and (max-width:767px) {
+  .detail-review { font-size:13px;}
+  .reply { width: 100%;}
+  .reply-content button { font-size:13px; padding:10px 10px;}
+}

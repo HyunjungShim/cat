@@ -1,0 +1,27 @@
+.res { font-size:20px; font-weight:bold; text-align:center; margin-top:300px;}
+.btn-content { display:flex; margin:0 auto;}
+.btn-content button {
+    width: 150px;
+    height: 60px;
+    border-radius: 5px;
+    margin:20px auto;    
+}
+
+.can {
+    color: #4C2574;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid #C9AFE4;
+}
+
+.del {
+    margin-left: 10px;
+    background-color: #4C2574;
+    color: white;
+    font-weight: bold;
+    margin-right:60px;
+}
+
+@media screen and (min-width:767px){
+    .res { width: 500px; margin:300px auto;}
+}
